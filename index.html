@@ -127,14 +127,26 @@
                         </div>
 
                         <!-- Download-Link für die PDF -->
-                        <a href="lebenslauf.pdf" download="Lebenslauf_Guy_Borel_Tabueu_Kamga.pdf">
-                            PDF herunterladen
-                        </a>
 
                         <a class="button" download="Lebenslauf_Guy_Borel_Tabueu_Kamga.pdf" href="Lebenslauf.pdf">
                             <i class="fa fa-download"></i>
                             Lebenslauf herunterladen
                         </a>
+
+                        <script>
+                            const btn = document.getElementById('showPreview');
+                            const preview = document.getElementById('pdfPreview');
+
+                            btn.onclick = function() {
+                                if (preview.style.display === 'none') {
+                                    preview.style.display = 'block';
+                                    btn.textContent = 'Vorschau ausblenden';
+                                } else {
+                                    preview.style.display = 'none';
+                                    btn.textContent = 'Vorschau anzeigen';
+                                }
+                            };
+                        </script>
 
 
                         <script>
