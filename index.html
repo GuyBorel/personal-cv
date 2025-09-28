@@ -116,17 +116,27 @@
 
                 <div class="columns download">
                     <p>
-                        <a class="button" download="Lebenslauf_Guy_Borel_Tabueu_Kamga.pdf" href="lebenslauf.pdf"><i
-                                class="fa fa-download"></i>Lebenslauf</a>
-                        <!-- PDF-Vorschau im Browser -->
-                        <iframe src="lebenslauf.pdf" width="100%" height="600px">
-                            Ihr Browser unterstützt keine PDF-Anzeige.
-                        </iframe>
+                        <!-- Vorschau-Button -->
+                        <button id="showPreview">Vorschau anzeigen</button>
+
+                        <!-- PDF-Vorschau, die zunächst versteckt ist -->
+                        <div id="pdfPreview" style="display: none; margin-top: 16px;">
+                            <iframe src="lebenslauf.pdf" width="100%" height="600px">
+                                Ihr Browser unterstützt keine PDF-Anzeige.
+                            </iframe>
+                        </div>
 
                         <!-- Download-Link für die PDF -->
                         <a href="lebenslauf.pdf" download="Lebenslauf_Guy_Borel_Tabueu_Kamga.pdf">
                             PDF herunterladen
                         </a>
+
+                        <script>
+                            document.getElementById('showPreview').onclick = function() {
+                            document.getElementById('pdfPreview').style.display = 'block';
+                              }
+                        </script>
+
 
                     </p>
                 </div>
