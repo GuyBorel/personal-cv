@@ -10,7 +10,7 @@
     <!--- Basic Page Needs
     ================================================== -->
     <meta charset="utf-8">
-    <title>Guy Borel Tabueu Kamga</title>
+    <title>Guy Borel Tabueu Kamga – Fullstack Entwickler</title>
     <meta content="" name="description">
     <meta content="" name="author">
 
@@ -39,9 +39,12 @@
 
 <!-- Header
 ================================================== -->
+
+<a class="skip-link" href="#main">Zum Hauptinhalt springen</a> 
+    
 <header id="home">
 
-    <nav id="nav-wrap">
+    <nav id="nav-wrap" aria-label="Hauptnavigation">
 
         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
         <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
@@ -49,7 +52,7 @@
         <ul class="nav" id="nav">
             <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
             <li><a class="smoothscroll" href="#about">Über mich</a></li>
-            <li><a class="smoothscroll" href="#resume">Bildung</a></li>
+            <li><a class="smoothscroll" href="#resume">Lebenslauf</a></li>
             <li><a class="smoothscroll" href="#portfolio">Portfolio</a></li>
             <li><a class="smoothscroll" href="#contact">Kontakt</a></li>
         </ul> <!-- end #nav -->
@@ -59,6 +62,7 @@
     <div class="row banner">
         <div class="banner-text">
             <h1 class="responsive-headline">Ich bin Guy Borel Tabueu Kamga.</h1>
+            <h2 class="subheadline">Ich entwickle skalierbare Webanwendungen mit Java, Spring Boot, Angular und React.</h2>
             <h3>Ich bin Master-Absolvent Informatik und begeistere mich für neue Technologien und Programmierung.
                 Beginnen Sie zu scrollen und erfahren Sie mehr <a class="smoothscroll" href="#about">über mich</a>.
             </h3>
@@ -79,14 +83,16 @@
 
 <!-- About Section
 ================================================== -->
+
+<main id="main">
 <section id="about">
 
     <div class="row">
 
         <div class="three columns">
 
-            <img alt="" class="profile-pic" src="images/borel.png"/>
-
+            <img class="profile-pic" src="images/borel.png" alt="Portrait von Guy Borel Tabueu Kamga"/>
+            
         </div>
 
         <div class="nine columns main-col">
@@ -104,17 +110,18 @@
 
                 <div class="columns contact-details">
 
-                    <h2>Grundinformationen</h2>
+                    <<h3>Grundinformationen</h3>
                     <ul>
                         <li>Alter: 27 Jahre</li>
                         <li>Adresse: Am Exer 8a, 38302 Wolfenbüttel</li>
                         <li>Telefon: +49 176 4054 3940</li>
-                        <li>E-Mail: guyborel@yahoo.com</li>
+                        <li><strong>E-Mail:</strong> <a href="mailto:guyborel@yahoo.com">guyborel@yahoo.com</a></li>
                     </ul>
 
                 </div>
 
                 <div class="columns download">
+                    <h3>Lebenslauf</h3>
                     <p>
                         <!-- Vorschau-Button -->
                         <button id="showPreview">Lebenslauf Vorschau anzeigen</button>
@@ -170,10 +177,9 @@
         </div>
 
         <div class="nine columns main-col">
-
-            <div class="row item">
+            <article class="row item">
                 <div class="twelve columns">
-                    <h3>Ostfalia Hochschule Braunschweig</h3>
+                    <h3>Ostfalia Hochschule für angewandte Wissenschaften</h3>
                     <p class="info">Master of Science (B.Sc.) – Informatik <span>&bull;</span> <em class="date">
                         2023 - 2025</em>
                         <strong>Schwerpunkt:</strong> Systems & Computer Engineering<br>
@@ -199,12 +205,12 @@
                     <strong>Tech-Skills:</strong> Spring-Boot, Angular, React, Node.js, Java, TypeScript, Python,
                     REST-APIs, Git, AWS
                 </div>
-            </div>
+            </article>
             <!-- item end -->
-
-            <div class="row item">
+        
+            <article class="row item">
                 <div class="twelve columns">
-                    <h3>Openclassroom , Udemy , ... </h3>
+                    <h3>Online-Plattformen (OpenClassroom, Udemy, ...)</h3>
                     <p class="info">Ständige Weiterbildung<span>&bull;</span> <em class="date">April 2019 - Heute</em>
                     </p>
                     <p>Aufgrund meiner Leidenschaft für Informatik und neue Technologien versuche ich, mir
@@ -213,11 +219,11 @@
                         Unternehmen realisieren.
                     </p>
                 </div>
-            </div> <!-- item end -->
+            </article> <!-- item end -->
         </div> <!-- main-col end -->
     </div> <!-- End Education -->
 
-    <div class="row">
+    <div class="row work">
 
         <div class="three columns header-col">
             <h1><span>Studienprojekte</span></h1>
@@ -238,20 +244,22 @@
                     </ul>
                 </div>
             </div> <!-- item end -->
-            <div class="row item">
+            <article class="row item">
                 <div class="twelve columns">
-                    <h3>Universität Würzburg</h3>
-                    <p class="info">Telemetrie & Telekommando<span>&bull;</span> <em class="date">Seit 2018</em></p>
+                    <h3>Telemetrie &amp; Telekommando</h3>
+                    <p class="info">
+                        Universität Würzburg
+                        <span>&bull;</span>
+                        <em class="date">seit 2018</em>
+                    </p>
                     <ul>
-                        <li>-> Implementierung eines Projekts (unter RODOS) zum Empfang
-                            eines Telekommandos (mit bestimmter Formatierung) durch
-                            UART3. Dieses prüft die Richtigkeit der Formatierung und der
-                            Deadline zum Lesen des Kommandos und Leuchtet
-                            entsprechender Lichte auf Mikrocontroller STM32F4
+                        <li>
+                            Implementierung eines Projekts (unter RODOS) zum Empfang eines Telekommandos über UART3
+                            mit Format- und Deadlineprüfung sowie Ansteuerung von LEDs auf einem STM32F4-Mikrocontroller.
                         </li>
                     </ul>
                 </div>
-            </div> <!-- item end -->
+            </article>
             <div class="row item">
                 <div class="twelve columns">
                     <h3>Universität Würzburg</h3>
@@ -364,28 +372,33 @@
 
     <!-- Skills
     ----------------------------------------------- -->
-    <div class="row skill">
-
+      <div class="row skill">
         <div class="three columns header-col">
             <h1><span>Skills</span></h1>
         </div>
 
         <div class="nine columns main-col">
-
-            <p>Was meine Sprachkenntnisse angeht, so spreche ich <b>fließend Englisch</b>, spreche derzeit
-                <b>sehr gut Deutsch</b> und habe <b>Französisch Muttersprache</b>.
+            <p>
+                Ich spreche fließend Englisch, sehr gut Deutsch und Französisch als Muttersprache.
             </p>
-            <h2>Fähigkeiten</h2>
+
+            <h3>Sprachkenntnisse</h3>
             <ul>
-                <li><b>Sprachen:</b> Französisch (C2), Englisch (B1), Deutsch (C1)</li>
-                <li><b>Technologien:</b> Java, Python, C/C++, JavaScript (ES6+), Typescript, HTML5, CSS3</li>
-                <li><b>Frameworks:</b> Angular, ReactJs, Node.js, Spring Boot, Gradle, Maven</li>
-                <li><b>Tools:</b> Git, Gitlab, Github, Docker, Linux, Windows, MS Office</li>
+                <li><strong>Französisch:</strong> C2 (Muttersprache)</li>
+                <li><strong>Deutsch:</strong> C1</li>
+                <li><strong>Englisch:</strong> B1/B2 (berufliche Kommunikation)</li> 
             </ul>
 
-        </div> <!-- main-col end -->
-
-    </div> <!-- End skills -->
+            <h3>Technologien</h3>
+            <ul>
+                <li><strong>Programmiersprachen:</strong> Java, Python, C/C++, JavaScript (ES6+), TypeScript, HTML5, CSS3</li>
+                <li><strong>Frameworks &amp; Plattformen:</strong> Angular, React, Node.js, Spring Boot, Gradle, Maven</li>
+                <li><strong>Tools &amp; DevOps:</strong> Git, GitLab, GitHub, Docker, Linux, Windows, CI/CD-Pipelines</li>
+                <li><strong>Sonstiges:</strong> REST-APIs, Testautomatisierung, Cloud-Grundlagen (AWS)</li> 
+            </ul>
+        </div>
+    </div>
+    <!-- End skills -->
 
 </section> <!-- Resume Section End-->
 
@@ -398,7 +411,7 @@
 
         <div class="twelve columns collapsed">
 
-            <h1>Portfolio (Einige Projekte zum Vorzeigen)</h1>
+            <h1>Portfolio – ausgewählte Projekte</h1>
 
             <!-- portfolio-wrapper -->
             <div class="bgrid-quarters s-bgrid-thirds cf" id="portfolio-wrapper">
@@ -558,59 +571,53 @@
 <!-- Contact Section
 ================================================== -->
 <section id="contact">
-
     <div class="row section-head">
         <div class="twelve columns header-col">
-            <h1>I'd Love To Hear From You.</h1>
+            <h1>Ich freue mich auf Ihre Nachricht.</h1> 
         </div>
     </div>
 
     <div class="row">
-
         <aside class="twelve columns footer-widgets">
-
             <div class="widget widget_contact">
-
                 <h4>Kontakt</h4>
                 <p class="address">
-                    <span>Name : Guy Borel Tabueu Kamga</span><br>
+                    <span>Name: Guy Borel Tabueu Kamga</span><br>
                     <span>Tel: +49 (0) 176 4054 3940</span><br>
-                    <span>Email: guyborel@yahoo.com</span>
+                    <span>Email: <a href="mailto:guyborel@yahoo.com">guyborel@yahoo.com</a></span>
                 </p>
-
             </div>
         </aside>
-
     </div>
-
-</section> <!-- Contact Section End-->
+</section>
+    <!-- Contact Section End-->
 
 
 <!-- footer
 ================================================== -->
 <footer>
-
     <div class="row">
-
         <div class="twelve columns">
-
             <ul class="social-links">
-                <li><a href="https://www.linkedin.com/in/guy-borel-tabueu-kamga"><i class="fa fa-linkedin"></i></a></li>
-                <li><a href="#"><i class="fa fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/guy-borel-tabueu-kamga" aria-label="LinkedIn Profil"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/GuyBorel" aria-label="GitHub Profil"><i class="fa fa-github"></i></a></li>
             </ul>
 
             <ul class="copyright">
-                <li>&copy; Copyright 2026 Guy</li>
-                <li>Design by Guy</li>
+                <li>&copy; 2026 Guy Borel Tabueu Kamga</li>
+                <li>Design &amp; Entwicklung: Guy</li> 
             </ul>
-
         </div>
 
-        <div id="go-top"><a class="smoothscroll" href="#home" title="Back to Top"><i class="icon-up-open"></i></a></div>
-
+        <div id="go-top">
+            <a class="smoothscroll" href="#home" title="Zurück nach oben">
+                <i class="icon-up-open"></i>
+            </a>
+        </div>
     </div>
-
-</footer> <!-- Footer End-->
+</footer>
+    
+<!-- Footer End-->
 
 <!-- Java Script
 ================================================== -->
