@@ -25,6 +25,14 @@
 	    var target = this.hash,
 	    $target = $(target);
 
+      if (!$target.length) return;
+
+      if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+         $('html, body').scrollTop($target.offset().top);
+         window.location.hash = target;
+         return;
+      }
+
 	    $('html, body').stop().animate({
 	        'scrollTop': $target.offset().top
 	    }, 800, 'swing', function () {
@@ -58,19 +66,6 @@
 		offset: '35%'
 
 	});
-
-
-/*----------------------------------------------------*/
-/*	Make sure that #header-background-image height is
-/* equal to the browser height.
------------------------------------------------------- */
-
-   $('header').css({ 'height': $(window).height() });
-   $(window).on('resize', function() {
-
-        $('header').css({ 'height': $(window).height() });
-        $('body').css({ 'width': $(window).width() })
-   });
 
 
 /*----------------------------------------------------*/
@@ -115,6 +110,17 @@
     $(document).on('click', '.popup-modal-dismiss', function (e) {
     		e.preventDefault();
     		$.magnificPopup.close();
+    });
+
+    $('#showPreview').on('click', function() {
+      var preview = document.getElementById('pdfPreview');
+      var isExpanded = this.getAttribute('aria-expanded') === 'true';
+
+      preview.hidden = isExpanded;
+      this.setAttribute('aria-expanded', String(!isExpanded));
+      this.textContent = isExpanded
+         ? 'Lebenslauf Vorschau anzeigen'
+         : 'Lebenslauf Vorschau ausblenden';
     });
 
 
@@ -178,7 +184,6 @@
 
 
 });
-
 
 
 
