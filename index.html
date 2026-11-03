@@ -3,8 +3,8 @@
 <head>
 
     <meta charset="utf-8">
-    <title>Guy Borel Tabueu Kamga – Fullstack Entwickler</title>
-    <meta name="description" content="Portfolio von Guy Borel Tabueu Kamga: Fullstack- und Frontend-Entwicklung mit Java, Spring Boot, Angular und React.">
+    <title data-i18n="page.title">Guy Borel Tabueu Kamga – Fullstack Entwickler</title>
+    <meta name="description" content="Portfolio von Guy Borel Tabueu Kamga: Fullstack- und Frontend-Entwicklung mit Java, Spring Boot, Angular und React." data-i18n-attr="content:page.description">
     <meta name="author" content="Guy Borel Tabueu Kamga">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,39 +23,44 @@
 </head>
 
 <body>
-<a class="skip-link" href="#main">Zum Inhalt springen</a>
+<a class="skip-link" href="#main" data-i18n="a11y.skip">Zum Inhalt springen</a>
 
 <!-- Header
 ================================================== -->
     
 <header id="home">
 
-    <nav id="nav-wrap" aria-label="Hauptnavigation">
+    <nav id="nav-wrap" aria-label="Hauptnavigation" data-i18n-attr="aria-label:nav.label">
 
-        <a class="mobile-btn" href="#nav-wrap" aria-label="Navigation öffnen">Navigation öffnen</a>
-        <a class="mobile-btn" href="#" aria-label="Navigation schließen">Navigation schließen</a>
+        <a class="mobile-btn" href="#nav-wrap" aria-label="Navigation öffnen" data-i18n-attr="aria-label:nav.open" data-i18n="nav.open">Navigation öffnen</a>
+        <a class="mobile-btn" href="#" aria-label="Navigation schließen" data-i18n-attr="aria-label:nav.close" data-i18n="nav.close">Navigation schließen</a>
 
         <ul class="nav" id="nav">
-            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
-            <li><a class="smoothscroll" href="#about">Über mich</a></li>
-            <li><a class="smoothscroll" href="#resume">Lebenslauf</a></li>
-            <li><a class="smoothscroll" href="#portfolio">Portfolio</a></li>
-            <li><a class="smoothscroll" href="#contact">Kontakt</a></li>
+            <li class="current"><a class="smoothscroll" href="#home" data-i18n="nav.home">Home</a></li>
+            <li><a class="smoothscroll" href="#about" data-i18n="nav.about">Über mich</a></li>
+            <li><a class="smoothscroll" href="#resume" data-i18n="nav.resume">Lebenslauf</a></li>
+            <li><a class="smoothscroll" href="#portfolio" data-i18n="nav.portfolio">Portfolio</a></li>
+            <li><a class="smoothscroll" href="#contact" data-i18n="nav.contact">Kontakt</a></li>
+            <li class="language-selector" role="group" aria-label="Sprache wählen" data-i18n-attr="aria-label:language.label">
+                <button class="language-button" type="button" lang="fr" data-language-switch="fr" aria-label="Français" aria-pressed="false">FR</button>
+                <button class="language-button" type="button" lang="en" data-language-switch="en" aria-label="English" aria-pressed="false">EN</button>
+                <button class="language-button is-active" type="button" lang="de" data-language-switch="de" aria-label="Deutsch" aria-pressed="true">DE</button>
+            </li>
         </ul> <!-- end #nav -->
 
     </nav> <!-- end #nav-wrap -->
 
     <div class="row banner">
         <div class="banner-text">
-            <h1 class="responsive-headline">Ich bin Guy Borel Tabueu Kamga.</h1>
-            <p class="subheadline">Ich entwickle skalierbare Webanwendungen mit Java, Spring Boot, Angular und React.</p>
-            <h3>Ich bin Master-Absolvent Informatik und begeistere mich für neue Technologien und Programmierung.
-                Beginnen Sie zu scrollen und erfahren Sie mehr <a class="smoothscroll" href="#about">über mich</a>.
-            </h3>
+            <h1 class="responsive-headline" data-i18n="hero.title">Ich bin Guy Borel Tabueu Kamga.</h1>
+            <p class="subheadline" data-i18n="hero.subtitle">Ich entwickle skalierbare Webanwendungen mit Java, Spring Boot, Angular und React.</p>
+            <p class="hero-intro"><span data-i18n="hero.intro">Ich habe einen Masterabschluss in Informatik und begeistere mich für neue Technologien und Softwareentwicklung.</span>
+                <a class="smoothscroll" href="#about" data-i18n="hero.aboutLink">Mehr über mich</a>.
+            </p>
             <hr/>
             <div class="hero-actions">
-                <a class="hero-button hero-button-primary smoothscroll" href="#portfolio">Projekte ansehen</a>
-                <a class="hero-button hero-button-secondary smoothscroll" href="#contact">Kontakt aufnehmen</a>
+                <a class="hero-button hero-button-primary smoothscroll" href="#portfolio" data-i18n="hero.projects">Projekte ansehen</a>
+                <a class="hero-button hero-button-secondary smoothscroll" href="#contact" data-i18n="hero.contact">Kontakt aufnehmen</a>
             </div>
             <ul class="social">
                 <li><a href="https://www.linkedin.com/in/guy-borel-tabueu-kamga-027a63185" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn-Profil (öffnet in neuem Tab)"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
@@ -65,7 +70,7 @@
     </div>
 
     <p class="scrolldown">
-        <a class="smoothscroll" href="#about" aria-label="Weiter zum Abschnitt Über mich"><i class="icon-down-circle" aria-hidden="true"></i></a>
+        <a class="smoothscroll" href="#about" aria-label="Weiter zum Abschnitt Über mich" data-i18n-attr="aria-label:hero.scroll"><i class="icon-down-circle" aria-hidden="true"></i></a>
     </p>
 
 </header> <!-- Header End -->
@@ -80,15 +85,15 @@
 
         <div class="three columns">
 
-            <img class="profile-pic" src="images/borel.png" alt="Guy Borel Tabueu Kamga" width="160" height="160" fetchpriority="high"/>
+            <img class="profile-pic" src="images/borel.png" alt="Guy Borel Tabueu Kamga" width="160" height="160" fetchpriority="high" data-i18n-attr="alt:about.photo"/>
             
         </div>
 
         <div class="nine columns main-col">
 
-            <h2>Über mich</h2>
+            <h2 data-i18n="about.title">Über mich</h2>
 
-            <p>
+            <p data-i18n="about.description">
                 Ich bin Master-Absolvent der Informatik an der Ostfalia Hochschule. Mein Schwerpunkt liegt auf Java,
                 modernen Webtechnologien wie Angular und React sowie Softwaretests. Ich arbeite gern im Team und
                 entwickle eigenverantwortlich zuverlässige, gut wartbare IT-Lösungen.
@@ -98,26 +103,26 @@
 
                 <div class="columns contact-details">
 
-                    <h3>Grundinformationen</h3>
+                    <h3 data-i18n="about.details">Grundinformationen</h3>
                     <ul>
-                        <li><strong>Telefon:</strong> <a href="tel:+4917640543940">+49 176 4054 3940</a></li>
-                        <li><strong>E-Mail:</strong> <a href="mailto:guyborel@yahoo.com">guyborel@yahoo.com</a></li>
+                        <li><strong data-i18n="contact.phone">Telefon:</strong> <a href="tel:+4917640543940">+49 176 4054 3940</a></li>
+                        <li><strong data-i18n="contact.email">E-Mail:</strong> <a href="mailto:guyborel@yahoo.com">guyborel@yahoo.com</a></li>
                     </ul>
 
                 </div>
 
                 <div class="columns download">
-                    <h3>Lebenslauf</h3>
+                    <h3 data-i18n="cv.title">Lebenslauf</h3>
                     <div class="resume-actions">
-                        <button id="showPreview" type="button" aria-controls="pdfPreview" aria-expanded="false">Lebenslauf Vorschau anzeigen</button>
+                        <button id="showPreview" type="button" aria-controls="pdfPreview" aria-expanded="false" data-i18n="cv.preview">Lebenslauf Vorschau anzeigen</button>
                         <div id="pdfPreview" class="pdf-preview" hidden>
-                            <iframe src="Lebenslauf.pdf" title="Lebenslauf von Guy Borel Tabueu Kamga" width="100%" height="600" loading="lazy">
-                                Ihr Browser unterstützt keine PDF-Anzeige.
+                            <iframe src="Lebenslauf.pdf" title="Lebenslauf von Guy Borel Tabueu Kamga" width="100%" height="600" loading="lazy" data-i18n-attr="title:cv.frame">
+                                <span data-i18n="cv.noPreview">Ihr Browser unterstützt keine PDF-Anzeige.</span>
                             </iframe>
                         </div>
                         <a class="button" download="Lebenslauf_Guy_Borel_Tabueu_Kamga.pdf" href="Lebenslauf.pdf">
-                            <i class="fa fa-download"></i>
-                            Lebenslauf herunterladen
+                            <i class="fa fa-download" aria-hidden="true"></i>
+                            <span data-i18n="cv.download">Lebenslauf herunterladen</span>
                         </a>
                     </div>
                 </div>
@@ -136,32 +141,32 @@
     <div class="row education">
 
         <div class="three columns header-col">
-            <h1><span>Bildung</span></h1>
+            <h1><span data-i18n="resume.education">Bildung</span></h1>
         </div>
 
         <div class="nine columns main-col">
             <article class="row item">
                 <div class="twelve columns">
                     <h3>Ostfalia Hochschule für angewandte Wissenschaften</h3>
-                    <p class="info">Master of Science (M.Sc.) – Informatik <span>&bull;</span> <em class="date">2023 - 2025</em></p>
-                    <p><strong>Schwerpunkt:</strong> Systems &amp; Computer Engineering<br>
-                        <strong>Abschlussnote:</strong> 1,3</p>
-                    <strong>Schwerpunkte:</strong>
+                    <p class="info"><span data-i18n="resume.masters">Master of Science (M.Sc.) – Informatik</span> <span>&bull;</span> <em class="date">2023 - 2025</em></p>
+                    <p><strong data-i18n="resume.focus">Schwerpunkt:</strong> Systems &amp; Computer Engineering<br>
+                        <strong data-i18n="resume.grade">Abschlussnote:</strong> 1,3</p>
+                    <strong data-i18n="resume.focusAreas">Schwerpunkte:</strong>
                     <ul>
-                        <li>Architektur verteilter nebenläufiger Systeme, Echtzeit-Aspekte und Software-Qualität.</li>
-                        <li>Web-Entwicklung (Angular, ReactJS, REST-APIs).</li>
-                        <li>Sauberes Design, Testbarkeit, Teamprojekte mit Code-Reviews und Cloud (AWS).</li>
+                        <li data-i18n="resume.masterSkill1">Architektur verteilter nebenläufiger Systeme, Echtzeit-Aspekte und Software-Qualität.</li>
+                        <li data-i18n="resume.masterSkill2">Web-Entwicklung (Angular, ReactJS, REST-APIs).</li>
+                        <li data-i18n="resume.masterSkill3">Sauberes Design, Testbarkeit, Teamprojekte mit Code-Reviews und Cloud (AWS).</li>
                     </ul>
                     <h3>Universität Würzburg</h3>
-                    <p class="info">Bachelor of Science (B.Sc.) – Informatik <span>&bull;</span> <em class="date">
+                    <p class="info"><span data-i18n="resume.bachelors">Bachelor of Science (B.Sc.) – Informatik</span> <span>&bull;</span> <em class="date">
                         2018 - 2022</em></p>
-                    <strong>Schwerpunkte:</strong>
+                    <strong data-i18n="resume.focusAreas">Schwerpunkte:</strong>
                     <ul>
-                        <li>Objektorientierte Programmierung (Java, Spring-Boot)</li>
-                        <li>Web-Entwicklung (Angular, Node.js, REST-API)</li>
+                        <li data-i18n="resume.bachelorSkill1">Objektorientierte Programmierung (Java, Spring-Boot)</li>
+                        <li data-i18n="resume.bachelorSkill2">Web-Entwicklung (Angular, Node.js, REST-API)</li>
                     </ul>
 
-                    <strong>Tech-Skills:</strong> Spring-Boot, Angular, React, Node.js, Java, TypeScript, Python,
+                    <strong data-i18n="resume.technologies">Tech-Skills:</strong> Spring-Boot, Angular, React, Node.js, Java, TypeScript, Python,
                     REST-APIs, Git, AWS
                 </div>
             </article>
@@ -169,10 +174,10 @@
         
             <article class="row item">
                 <div class="twelve columns">
-                    <h3>Online-Plattformen (OpenClassroom, Udemy, ...)</h3>
-                    <p class="info">Ständige Weiterbildung<span>&bull;</span> <em class="date">April 2019 - Heute</em>
+                    <h3 data-i18n="resume.learningTitle">Online-Plattformen (OpenClassroom, Udemy, ...)</h3>
+                    <p class="info"><span data-i18n="resume.learning">Ständige Weiterbildung</span><span>&bull;</span> <em class="date" data-i18n="resume.learningDate">April 2019 - Heute</em>
                     </p>
-                    <p>Aufgrund meiner Leidenschaft für Informatik und neue Technologien versuche ich, mir
+                    <p data-i18n="resume.learningDescription">Aufgrund meiner Leidenschaft für Informatik und neue Technologien versuche ich, mir
                         verschiedene Fähigkeiten anzueignen, um meine persönlichen Projekte zu verwirklichen.
                         In diesem Zusammenhang lerne ich die Webentwicklung und möchte viele Großprojekte in
                         Unternehmen realisieren.
@@ -185,7 +190,7 @@
     <div class="row work">
 
         <div class="three columns header-col">
-            <h1><span>Studienprojekte</span></h1>
+            <h1><span data-i18n="resume.projects">Studienprojekte</span></h1>
         </div>
 
         <div class="nine columns main-col">
@@ -193,28 +198,26 @@
             <div class="row item">
                 <div class="twelve columns">
                     <h3>Universität Würzburg</h3>
-                    <p class="info">Kontrolle eines Unmanned Vehicle Systems<span>&bull;</span> <em class="date">Seit
-                        2018</em></p>
+                    <p class="info"><span data-i18n="resume.vehicle">Kontrolle eines Unmanned Vehicle Systems</span><span>&bull;</span> <em class="date" data-i18n="resume.since2018">Seit 2018</em></p>
                     <ul>
-                        <li>-> Kartierung einer Umgebung</li>
-                        <li>-> Lokalisierung der Umgebung auf der aufgenommenen Karte und
-                            Verfolgung eines an Roboter übergebenen Pfades (unter ROS)
-                        </li>
+                        <li data-i18n="resume.vehicleTask1">Kartierung einer Umgebung</li>
+                        <li data-i18n="resume.vehicleTask2">Lokalisierung der Umgebung auf der aufgenommenen Karte und Verfolgung eines an den Roboter übergebenen Pfades (unter ROS)</li>
                     </ul>
                 </div>
             </div> <!-- item end -->
             <article class="row item">
                 <div class="twelve columns">
-                    <h3>Telemetrie &amp; Telekommando</h3>
+                    <h3 data-i18n="resume.telemetry">Telemetrie &amp; Telekommando</h3>
                     <p class="info">
-                        Universität Würzburg
+                        <span>Universität Würzburg</span>
                         <span>&bull;</span>
-                        <em class="date">seit 2018</em>
+                        <em class="date" data-i18n="resume.since2018">Seit 2018</em>
                     </p>
                     <ul>
                         <li>
-                            Implementierung eines Projekts (unter RODOS) zum Empfang eines Telekommandos über UART3
+                            <span data-i18n="resume.telemetryDescription">Implementierung eines Projekts (unter RODOS) zum Empfang eines Telekommandos über UART3
                             mit Format- und Deadlineprüfung sowie Ansteuerung von LEDs auf einem STM32F4-Mikrocontroller.
+                            </span>
                         </li>
                     </ul>
                 </div>
@@ -222,57 +225,43 @@
             <div class="row item">
                 <div class="twelve columns">
                     <h3>Universität Würzburg</h3>
-                    <p class="info">Scheduling<span>&bull;</span> <em class="date">Seit 2018</em></p>
+                    <p class="info"><span data-i18n="resume.scheduling">Scheduling</span><span>&bull;</span> <em class="date" data-i18n="resume.since2018">Seit 2018</em></p>
                     <ul>
-                        <li>-> Implementierung eines statischen und dynamischen Scheduling
-                            bzw. Scheduling Strategien zum Regeln der Ausführung mehrere
-                            Prozesse in Betriebssystemen mit Arbitrationslogik unter C++
-                        </li>
+                        <li data-i18n="resume.schedulingDescription">Implementierung eines statischen und dynamischen Scheduling bzw. Scheduling-Strategien zur Steuerung der Ausführung mehrerer Prozesse in Betriebssystemen mit Arbitrationslogik unter C++</li>
                     </ul>
                 </div>
             </div> <!-- item end -->
             <div class="row item">
                 <div class="twelve columns">
                     <h3>Universität Würzburg</h3>
-                    <p class="info">Marktanalyse (mit Java)<span>&bull;</span> <em class="date">Seit 2018</em></p>
+                    <p class="info"><span data-i18n="resume.marketAnalysis">Marktanalyse (mit Java)</span><span>&bull;</span> <em class="date" data-i18n="resume.since2018">Seit 2018</em></p>
                     <ul>
-                        <li>-> Implementierung eines Programms zur Aktienanalyse, das
-                            Datensätze in CSV-Format generiert, dann in eine Java-interne
-                            Repräsentation bringt, und zum Schluss bestimmte
-                            Berechnungen durchführt
-                        </li>
+                        <li data-i18n="resume.marketDescription">Implementierung eines Programms zur Aktienanalyse, das Datensätze im CSV-Format erzeugt, in eine Java-interne Repräsentation überführt und anschließend Berechnungen durchführt</li>
                     </ul>
                 </div>
             </div> <!-- item end -->
             <div class="row item">
                 <div class="twelve columns">
                     <h3>Universität Würzburg</h3>
-                    <p class="info">Turingmaschine (mit Java)<span>&bull;</span> <em class="date">Seit 2018</em></p>
+                    <p class="info"><span data-i18n="resume.turing">Turingmaschine (mit Java)</span><span>&bull;</span> <em class="date" data-i18n="resume.since2018">Seit 2018</em></p>
                     <ul>
-                        <li>-> Zunächst sollte ein endlicher Automat definiert werden, der als
-                            Grundlage für die Turingmaschine fungiert, welche dann aus
-                            einem Datenstrom zu gelesen wird
-                        </li>
+                        <li data-i18n="resume.turingDescription">Zunächst wurde ein endlicher Automat als Grundlage für eine Turingmaschine definiert, die anschließend einen Datenstrom verarbeitet.</li>
                     </ul>
                 </div>
             </div> <!-- item end -->
             <div class="row item">
                 <div class="twelve columns">
                     <h3>Universität Würzburg</h3>
-                    <p class="info">Hölzchen-Spiel (unter Java)<span>&bull;</span> <em class="date">Seit 2018</em></p>
+                    <p class="info"><span data-i18n="resume.sticks">Hölzchen-Spiel (unter Java)</span><span>&bull;</span> <em class="date" data-i18n="resume.since2018">Seit 2018</em></p>
                     <ul>
-                        <li>-> Das Spiel sollte so implementiert werden, dass es über die
-                            Konsole durch zwei Personen gespielt werden kann, wobei
-                            jeder Spieler pro Runde 1-3 Hölzchen ziehen muss. Die
-                            anfängliche Anzahl der Hölzchen sollte frei konfigurierbar sein
-                        </li>
+                        <li data-i18n="resume.sticksDescription">Konsolenspiel für zwei Personen: Pro Runde zieht jeder Spieler ein bis drei Hölzchen. Die Anfangszahl ist frei konfigurierbar.</li>
                     </ul>
                 </div>
             </div> <!-- item end -->
             <div class="row item">
                 <div class="twelve columns">
                     <h3>Universität Würzburg</h3>
-                    <p class="info">2048 – Puzzle-Spiel (mit Java)<span>&bull;</span> <em class="date">Seit 2018</em>
+                    <p class="info"><span data-i18n="resume.game2048">2048 – Puzzle-Spiel (mit Java)</span><span>&bull;</span> <em class="date" data-i18n="resume.since2018">Seit 2018</em>
                     </p>
                 </div>
             </div> <!-- item end -->
@@ -284,29 +273,33 @@
     <div class="row work">
 
         <div class="three columns header-col">
-            <h1><span>Erfahrungen</span></h1>
+            <h1><span data-i18n="resume.experience">Erfahrungen</span></h1>
         </div>
 
         <div class="nine columns main-col">
 
             <div class="row item">
                 <div class="twelve columns">
-                    <h3>Adesso SE</h3>
-                    <p class="info">Software Developper <span>&bull;</span> <em class="date">Juni 2022 - bis Heute</em>
+                    <h3 data-i18n="resume.capgemini">Capgemini Deutschland GmbH</h3>
+                    <p class="info"><span data-i18n="resume.capgeminiRole">Software Engineer</span> <span>&bull;</span> <em class="date" data-i18n="resume.january2026">Januar 2026 – heute</em>
                     </p>
                     <ul>
-                        <li>-> Umsetzung fachlicher Anforderungen im Frontend (Angular und ReactJS) durch die
-                            Entwicklung modularer Microservices sowie deren Integration in bestehende Plattformen.
-                        </li>
-                        <li>-> Eigenständige Frontend-Entwicklung inklusive Konzeption, Implementierung und
-                            Durchführung von Unit Tests unter Einsatz aktueller Testframeworks (z.B. Jasmine, Karma).
-                        </li>
-                        <li>-> Weiterentwicklung komplexer Frontend-Anwendungen mit Angular, Einbindung und Definition
-                            klarer Schnittstellen, Containerisierung mittels Docker sowie automatisiertes Deployment
-                            auf virtuellen Maschinen mit Kubernetes im Rahmen einer CI/CD-Pipeline.
-                        </li>
-                        <li>-> Beteiligung an Code-Reviews, Mitgestaltung und Sicherstellung von Entwicklungsstandards
-                            sowie Unterstützung der kontinuierlichen Integration und Auslieferung. </li>
+                        <li data-i18n="resume.capgeminiFocus">Schwerpunkt: Java und Eclipse.</li>
+                        <li data-i18n="resume.capgeminiLocation">Standort: Hannover, Deutschland.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row item">
+                <div class="twelve columns">
+                    <h3>Adesso SE</h3>
+                    <p class="info"><span data-i18n="resume.adessoRole">Werkstudent</span> <span>&bull;</span> <em class="date" data-i18n="resume.adessoDates">Juni 2022 – Dezember 2025</em>
+                    </p>
+                    <ul>
+                        <li data-i18n="resume.adessoTask1">Umsetzung fachlicher Anforderungen im Frontend (Angular und ReactJS) durch die Entwicklung modularer Microservices sowie deren Integration in bestehende Plattformen.</li>
+                        <li data-i18n="resume.adessoTask2">Eigenständige Frontend-Entwicklung von der Konzeption bis zu Implementierung und Unit-Tests mit Jasmine und Karma.</li>
+                        <li data-i18n="resume.adessoTask3">Weiterentwicklung komplexer Angular-Anwendungen, klare Schnittstellendefinition, Docker-Containerisierung und automatisierte Deployments auf virtuellen Maschinen mit Kubernetes und CI/CD.</li>
+                        <li data-i18n="resume.adessoTask4">Mitwirkung an Code-Reviews und Entwicklungsstandards sowie Unterstützung der kontinuierlichen Integration und Auslieferung.</li>
                     </ul>
                 </div>
             </div> <!-- item end -->
@@ -314,11 +307,11 @@
             <div class="row item">
                 <div class="twelve columns">
                     <h3>Garmin GmbH, Würzburg</h3>
-                    <p class="info">Werkstudent, Testing <span>&bull;</span> <em class="date">Juni 2020 - Dec 2020</em>
+                    <p class="info"><span data-i18n="resume.studentTester">Werkstudent im Testing</span> <span>&bull;</span> <em class="date" data-i18n="resume.juneDec2020">Juni 2020 - Dezember 2020</em>
                     </p>
                     <ul>
-                        <li>-> Test der Navigationsangaben und der graphishen Benutzoberflächen</li>
-                        <li>-> String Rewiews für die betreffende Sprache</li>
+                        <li data-i18n="resume.garminTask1">Tests von Navigationsanweisungen und grafischen Benutzeroberflächen.</li>
+                        <li data-i18n="resume.garminTask2">Sprachprüfung und Korrektur von Texten.</li>
                     </ul>
                 </div>
             </div> <!-- item end -->
@@ -333,27 +326,27 @@
     ----------------------------------------------- -->
       <div class="row skill">
         <div class="three columns header-col">
-            <h1><span>Skills</span></h1>
+            <h1><span data-i18n="resume.skills">Kompetenzen</span></h1>
         </div>
 
         <div class="nine columns main-col">
-            <p>
+            <p data-i18n="resume.languagesIntro">
                 Ich spreche fließend Englisch, sehr gut Deutsch und Französisch als Muttersprache.
             </p>
 
-            <h3>Sprachkenntnisse</h3>
+            <h3 data-i18n="resume.languages">Sprachkenntnisse</h3>
             <ul>
-                <li><strong>Französisch:</strong> C2 (Muttersprache)</li>
-                <li><strong>Deutsch:</strong> C1</li>
-                <li><strong>Englisch:</strong> B1/B2 (berufliche Kommunikation)</li> 
+                <li><strong data-i18n="language.french">Französisch:</strong> <span data-i18n="language.frenchLevel">C2 (Muttersprache)</span></li>
+                <li><strong data-i18n="language.german">Deutsch:</strong> <span data-i18n="language.germanLevel">C1</span></li>
+                <li><strong data-i18n="language.english">Englisch:</strong> <span data-i18n="language.englishLevel">B1/B2 (berufliche Kommunikation)</span></li>
             </ul>
 
-            <h3>Technologien</h3>
+            <h3 data-i18n="resume.technology">Technologien</h3>
             <ul>
-                <li><strong>Programmiersprachen:</strong> Java, Python, C/C++, JavaScript (ES6+), TypeScript, HTML5, CSS3</li>
-                <li><strong>Frameworks &amp; Plattformen:</strong> Angular, React, Node.js, Spring Boot, Gradle, Maven</li>
-                <li><strong>Tools &amp; DevOps:</strong> Git, GitLab, GitHub, Docker, Linux, Windows, CI/CD-Pipelines</li>
-                <li><strong>Sonstiges:</strong> REST-APIs, Testautomatisierung, Cloud-Grundlagen (AWS)</li> 
+                <li><strong data-i18n="resume.programmingLanguages">Programmiersprachen:</strong> Java, Python, C/C++, JavaScript (ES6+), TypeScript, HTML5, CSS3</li>
+                <li><strong data-i18n="resume.frameworks">Frameworks &amp; Plattformen:</strong> Angular, React, Node.js, Spring Boot, Gradle, Maven</li>
+                <li><strong data-i18n="resume.tools">Tools &amp; DevOps:</strong> Git, GitLab, GitHub, Docker, Linux, Windows, CI/CD-Pipelines</li>
+                <li><strong data-i18n="resume.other">Sonstiges:</strong> <span data-i18n="resume.otherSkills">REST-APIs, Testautomatisierung, Cloud-Grundlagen (AWS)</span></li>
             </ul>
         </div>
     </div>
@@ -370,7 +363,7 @@
 
         <div class="twelve columns collapsed">
 
-            <h1>Portfolio – ausgewählte Projekte</h1>
+            <h1 data-i18n="portfolio.title">Portfolio – ausgewählte Projekte</h1>
 
             <!-- portfolio-wrapper -->
             <div class="bgrid-quarters s-bgrid-thirds cf" id="portfolio-wrapper">
@@ -378,12 +371,12 @@
                 <div class="columns portfolio-item">
                     <div class="item-wrap">
 
-                        <a href="#modal-01" aria-label="Details zum Projekt Cascade anzeigen">
-                            <img alt="Vorschau des Cascade-Projekts" src="images/portfolio/cascade.png" loading="lazy" decoding="async">
+                        <a href="#modal-01" aria-label="Details zum Projekt Cascade anzeigen" data-i18n-attr="aria-label:project.cascade.open">
+                            <img alt="Vorschau des Cascade-Projekts" src="images/portfolio/cascade.png" loading="lazy" decoding="async" data-i18n-attr="alt:project.cascade.image">
                             <div class="overlay">
                                 <div class="portfolio-item-meta">
                                     <h5>Cascade</h5>
-                                    <p>Frontend</p>
+                                    <p data-i18n="project.frontend">Frontend</p>
                                 </div>
                             </div>
                             <div class="link-icon"><i class="icon-plus"></i></div>
@@ -395,12 +388,12 @@
                 <div class="columns portfolio-item">
                     <div class="item-wrap">
 
-                        <a href="#modal-02" aria-label="Details zur To-do-App anzeigen">
-                            <img alt="Vorschau der To-do-App" src="images/portfolio/todo-app.png" loading="lazy" decoding="async">
+                        <a href="#modal-02" aria-label="Details zur To-do-App anzeigen" data-i18n-attr="aria-label:project.todo.open">
+                            <img alt="Vorschau der To-do-App" src="images/portfolio/todo-app.png" loading="lazy" decoding="async" data-i18n-attr="alt:project.todo.image">
                             <div class="overlay">
                                 <div class="portfolio-item-meta">
-                                    <h5>To Do App</h5>
-                                    <p>Frontend / Javascript</p>
+                                    <h5 data-i18n="project.todo.title">To-do-App</h5>
+                                    <p data-i18n="project.frontendJs">Frontend / JavaScript</p>
                                 </div>
                             </div>
                             <div class="link-icon"><i class="icon-plus"></i></div>
@@ -412,12 +405,12 @@
                 <div class="columns portfolio-item">
                     <div class="item-wrap">
 
-                        <a href="#modal-03" aria-label="Details zum Rechnerprojekt anzeigen">
-                            <img alt="Vorschau des Rechnerprojekts" src="images/portfolio/calculator.png" loading="lazy" decoding="async">
+                        <a href="#modal-03" aria-label="Details zum Rechnerprojekt anzeigen" data-i18n-attr="aria-label:project.calculator.open">
+                            <img alt="Vorschau des Rechnerprojekts" src="images/portfolio/calculator.png" loading="lazy" decoding="async" data-i18n-attr="alt:project.calculator.image">
                             <div class="overlay">
                                 <div class="portfolio-item-meta">
-                                    <h5>Calculator</h5>
-                                    <p>Frontend / Javascript</p>
+                                    <h5 data-i18n="project.calculator.title">Rechner</h5>
+                                    <p data-i18n="project.frontendJs">Frontend / JavaScript</p>
                                 </div>
                             </div>
                             <div class="link-icon"><i class="icon-plus"></i></div>
@@ -429,12 +422,12 @@
                 <div class="columns portfolio-item">
                     <div class="item-wrap">
 
-                        <a href="#modal-04" aria-label="Details zur Portfolio-Website anzeigen">
-                            <img alt="Vorschau der Portfolio-Website" src="images/portfolio/portfolio.png" loading="lazy" decoding="async">
+                        <a href="#modal-04" aria-label="Details zur Portfolio-Website anzeigen" data-i18n-attr="aria-label:project.site.open">
+                            <img alt="Vorschau der Portfolio-Website" src="images/portfolio/portfolio.png" loading="lazy" decoding="async" data-i18n-attr="alt:project.site.image">
                             <div class="overlay">
                                 <div class="portfolio-item-meta">
-                                    <h5>Portfolio Website</h5>
-                                    <p>Frontend : HTML / CSS</p>
+                                    <h5 data-i18n="project.site.title">Portfolio-Website</h5>
+                                    <p data-i18n="project.frontendHtml">Frontend: HTML / CSS</p>
                                 </div>
                             </div>
                             <div class="link-icon"><i class="icon-plus"></i></div>
@@ -452,68 +445,68 @@
 
         <div class="popup-modal mfp-hide" id="modal-01">
 
-            <img alt="Vorschau des Cascade-Projekts" class="scale-with-grid" src="images/portfolio/cascade.png" loading="lazy" decoding="async"/>
+            <img alt="Vorschau des Cascade-Projekts" class="scale-with-grid" src="images/portfolio/cascade.png" loading="lazy" decoding="async" data-i18n-attr="alt:project.cascade.image"/>
 
             <div class="description-box">
                 <h4>Cascade</h4>
-                <p>Dies ist eine einfache Webseite, die mit HTML und CSS erstellt wurde, um meine Designfähigkeiten zu
+                <p data-i18n="project.cascade.description">Dies ist eine einfache Webseite, die mit HTML und CSS erstellt wurde, um meine Designfähigkeiten zu
                     entwickeln</p>
-                <span class="categories"><i class="fa fa-tag"></i>HTML/CSS Webdesign</span>
+                <span class="categories"><i class="fa fa-tag" aria-hidden="true"></i><span data-i18n="project.htmlDesign">HTML/CSS Webdesign</span></span>
             </div>
 
             <div class="link-box">
-                <button class="popup-modal-dismiss" type="button">Schließen</button>
+                <button class="popup-modal-dismiss" type="button" data-i18n="project.close">Schließen</button>
             </div>
 
         </div><!-- modal-01 End -->
 
         <div class="popup-modal mfp-hide" id="modal-02">
 
-            <img alt="Vorschau der To-do-App" class="scale-with-grid" src="images/portfolio/todo-app.png" loading="lazy" decoding="async"/>
+            <img alt="Vorschau der To-do-App" class="scale-with-grid" src="images/portfolio/todo-app.png" loading="lazy" decoding="async" data-i18n-attr="alt:project.todo.image"/>
 
             <div class="description-box">
-                <h4>To-do App</h4>
-                <p>Dies ist eine einfache to-do List app, die mit HTML CSS und Javascript erstellt wurde, um meine
+                <h4 data-i18n="project.todo.title">To-do-App</h4>
+                <p data-i18n="project.todo.description">Dies ist eine einfache To-do-Liste, die mit HTML, CSS und JavaScript erstellt wurde, um meine
                     Javascriptfähigkeiten zu entwickeln</p>
-                <span class="categories"><i class="fa fa-tag"></i>Frontend , Javascript , App , Web Development</span>
+                <span class="categories"><i class="fa fa-tag" aria-hidden="true"></i><span data-i18n="project.webApp">Frontend · JavaScript · Web-App</span></span>
             </div>
 
             <div class="link-box">
-                <button class="popup-modal-dismiss" type="button">Schließen</button>
+                <button class="popup-modal-dismiss" type="button" data-i18n="project.close">Schließen</button>
             </div>
 
         </div><!-- modal-02 End -->
 
         <div class="popup-modal mfp-hide" id="modal-03">
 
-            <img alt="Vorschau des Rechnerprojekts" class="scale-with-grid" src="images/portfolio/calculator.png" loading="lazy" decoding="async"/>
+            <img alt="Vorschau des Rechnerprojekts" class="scale-with-grid" src="images/portfolio/calculator.png" loading="lazy" decoding="async" data-i18n-attr="alt:project.calculator.image"/>
 
             <div class="description-box">
-                <h4>Rechner</h4>
-                <p>Dies ist eine einfache Calculator app, die mit HTML CSS und Javascript erstellt wurde, um meine
+                <h4 data-i18n="project.calculator.title">Rechner</h4>
+                <p data-i18n="project.calculator.description">Dies ist eine einfache Rechner-App, die mit HTML, CSS und JavaScript erstellt wurde, um meine
                     Javascriptfähigkeiten zu entwickeln</p>
-                <span class="categories"><i class="fa fa-tag"></i>Frontend , Javascript , App , Web Development</span>
+                <span class="categories"><i class="fa fa-tag" aria-hidden="true"></i><span data-i18n="project.webApp">Frontend · JavaScript · Web-App</span></span>
             </div>
 
             <div class="link-box">
-                <button class="popup-modal-dismiss" type="button">Schließen</button>
+                <button class="popup-modal-dismiss" type="button" data-i18n="project.close">Schließen</button>
             </div>
 
         </div><!-- modal-03 End -->
 
         <div class="popup-modal mfp-hide" id="modal-04">
 
-            <img alt="Vorschau der Portfolio-Website" class="scale-with-grid" src="images/portfolio/portfolio.png" loading="lazy" decoding="async"/>
+            <img alt="Vorschau der Portfolio-Website" class="scale-with-grid" src="images/portfolio/portfolio.png" loading="lazy" decoding="async" data-i18n-attr="alt:project.site.image"/>
 
             <div class="description-box">
-                <h4>Portfolio</h4>
-                <p>Dies ist eine einfache Portfolio Webseite, die mit HTML und CSS erstellt wurde, um meine
+                <h4 data-i18n="project.site.title">Portfolio-Website</h4>
+                <p data-i18n="project.site.description">Diese Portfolio-Website wurde mit HTML und CSS erstellt, um meine
                     Designfähigkeiten zu entwickeln</p>
-                <span class="categories"><i class="fa fa-tag"></i>HTML/CSS Webdesign</span>
+                <span class="categories"><i class="fa fa-tag" aria-hidden="true"></i><span data-i18n="project.htmlDesign">HTML/CSS Webdesign</span></span>
             </div>
 
             <div class="link-box">
-                <button class="popup-modal-dismiss" type="button">Schließen</button>
+                <button class="popup-modal-dismiss" type="button" data-i18n="project.close">Schließen</button>
             </div>
 
         </div><!-- modal-04 End -->
@@ -528,18 +521,18 @@
 <section id="contact">
     <div class="row section-head">
         <div class="twelve columns header-col">
-            <h2>Ich freue mich auf Ihre Nachricht.</h2>
+            <h2 data-i18n="contact.heading">Ich freue mich auf Ihre Nachricht.</h2>
         </div>
     </div>
 
     <div class="row">
         <aside class="twelve columns footer-widgets">
             <div class="widget widget_contact">
-                <h4>Kontakt</h4>
+                <h4 data-i18n="contact.title">Kontakt</h4>
                 <p class="address">
-                    <span>Name: Guy Borel Tabueu Kamga</span><br>
-                    <span>Telefon: <a href="tel:+4917640543940">+49 176 4054 3940</a></span><br>
-                    <span>Email: <a href="mailto:guyborel@yahoo.com">guyborel@yahoo.com</a></span>
+                    <span><span data-i18n="contact.name">Name:</span> Guy Borel Tabueu Kamga</span><br>
+                    <span><span data-i18n="contact.phone">Telefon:</span> <a href="tel:+4917640543940">+49 176 4054 3940</a></span><br>
+                    <span><span data-i18n="contact.email">E-Mail:</span> <a href="mailto:guyborel@yahoo.com">guyborel@yahoo.com</a></span>
                 </p>
             </div>
         </aside>
@@ -554,18 +547,18 @@
     <div class="row">
         <div class="twelve columns">
             <ul class="social-links">
-                <li><a href="https://www.linkedin.com/in/guy-borel-tabueu-kamga-027a63185" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn-Profil (öffnet in neuem Tab)"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                <li><a href="https://github.com/GuyBorel" target="_blank" rel="noopener noreferrer" aria-label="GitHub-Profil (öffnet in neuem Tab)"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/guy-borel-tabueu-kamga-027a63185" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn-Profil (öffnet in neuem Tab)" data-i18n-attr="aria-label:social.linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                <li><a href="https://github.com/GuyBorel" target="_blank" rel="noopener noreferrer" aria-label="GitHub-Profil (öffnet in neuem Tab)" data-i18n-attr="aria-label:social.github"><i class="fa fa-github" aria-hidden="true"></i></a></li>
             </ul>
 
             <ul class="copyright">
                 <li>&copy; 2026 Guy Borel Tabueu Kamga</li>
-                <li>Design &amp; Entwicklung: Guy</li> 
+                <li data-i18n="footer.credit">Design &amp; Entwicklung: Guy</li>
             </ul>
         </div>
 
         <div id="go-top">
-            <a class="smoothscroll" href="#home" aria-label="Zurück nach oben">
+            <a class="smoothscroll" href="#home" aria-label="Zurück nach oben" data-i18n-attr="aria-label:footer.backToTop">
                 <i class="icon-up-open" aria-hidden="true"></i>
             </a>
         </div>
@@ -582,8 +575,8 @@
 
 <script src="js/jquery.flexslider.js"></script>
 <script src="js/waypoints.js"></script>
-<script src="js/jquery.fittext.js"></script>
 <script src="js/magnific-popup.js"></script>
+<script src="js/translations.js"></script>
 <script src="js/init.js"></script>
 
 </body>

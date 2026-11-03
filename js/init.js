@@ -7,15 +7,6 @@
  jQuery(document).ready(function($) {
 
 /*----------------------------------------------------*/
-/* FitText Settings
------------------------------------------------------- */
-
-    setTimeout(function() {
-	   $('h1.responsive-headline').fitText(1, { minFontSize: '40px', maxFontSize: '90px' });
-	 }, 100);
-
-
-/*----------------------------------------------------*/
 /* Smooth Scrolling
 ------------------------------------------------------ */
 
@@ -73,23 +64,7 @@
 ------------------------------------------------------*/
 
    $(window).on('scroll', function() {
-
-		var h = $('header').height();
-		var y = $(window).scrollTop();
-      var nav = $('#nav-wrap');
-
-	   if ( (y > h*.20) && (y < h) && ($(window).outerWidth() > 768 ) ) {
-	      nav.fadeOut('fast');
-	   }
-      else {
-         if (y < h*.20) {
-            nav.removeClass('opaque').fadeIn('fast');
-         }
-         else {
-            nav.addClass('opaque').fadeIn('fast');
-         }
-      }
-
+      $('#nav-wrap').toggleClass('opaque', $(window).scrollTop() > 40);
 	});
 
 
@@ -118,9 +93,11 @@
 
       preview.hidden = isExpanded;
       this.setAttribute('aria-expanded', String(!isExpanded));
+      var language = document.documentElement.lang;
+      var translations = window.portfolioTranslations;
       this.textContent = isExpanded
-         ? 'Lebenslauf Vorschau anzeigen'
-         : 'Lebenslauf Vorschau ausblenden';
+         ? translations[language]['cv.preview']
+         : translations[language]['cv.previewHide'];
     });
 
 
@@ -184,7 +161,6 @@
 
 
 });
-
 
 
 
